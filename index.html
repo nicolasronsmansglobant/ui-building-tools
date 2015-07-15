@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>UI Builing Tools - Exercise</title>
+
+    <script src="node_modules/requirejs/require.js" data-main="js/app.min.js"></script>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="intro">
+        <h1>Hello Fede!!</h1>
+        <p>Congrats, you've just generated the UI Building Tools project.</p>
+        <p>
+          If you see this, it means that you've already run "grunt" (or "grunt start").
+          <br>
+          All grunt tasks are defined and configured into the "Gruntfile.js" file in the root directory.
+          <br>
+          If you take a look at it, you can notice that there are already plugins used and tasks defined: "less", "requirejs", "jshint", "csslint", "connect" and "watch".
+        </p>
+
+        <h2>Exercises</h2>
+        <p>
+          What we ask you is to be able to create a very tiny web app using requirejs. Everything you need is alreay set up. Modify or add any file you need and don't hesitate installing a new plugin for grunt (or even for nodeJS) if it can help you.
+        </p>
+        <p>Here are the exercise's requirements:</p>
+        <ol>
+          <li>
+            modify the Gruntfile.js registering a "build" task regrouping all the "less", "requirejs", "jshint" and "csslint" tasks we want to execute when the app has started or by any changes triggered by the watch task
+          </li>
+          <li>
+            create and add in the "TODO" section below a gallery of pure randomness. It should contain at least 10 items. Each item will be made of a random image, a random caption and a random author. Each of the random-thing should be a separate module (e.g.: image.js, author.js) called by you main file (main.js). You could also create a module in charge of the randomness (e.g.: random.js), which can be call by the other ones
+          </li>
+          <li>
+            use hogan.js to support precompiled templates made with grunt-hogan and be able to generate html to inject into the web page
+          </li>
+          <li>
+            add some styling into main.less to make it look like an exquisite piece of art
+          </li>
+        </ol>
+      </div>
+
+      <div id="gallery" class="gallery row"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "ui-building-tools",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "hogan.js": "latest",
+    "jquery": "^1.11.1",
+    "requirejs": "latest"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-requirejs": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-hogan": "latest",
+    "lesshat": "latest",
+    "intern": "latest"
+  }
+}

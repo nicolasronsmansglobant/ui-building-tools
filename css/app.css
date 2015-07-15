@@ -1,0 +1,128 @@
+body {
+  background: #eee;
+}
+.intro {
+  display: none;
+}
+.gallery {
+  margin-left: 0;
+  padding: 0 0 15px;
+}
+.card {
+  float: left;
+  padding: 15px 15px 0 0;
+  position: relative;
+  width: 20%;
+}
+.card-container {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 2px #aaaaaa;
+  -moz-box-shadow: 0 1px 2px #aaaaaa;
+  box-shadow: 0 1px 2px #aaaaaa;
+  padding: 10px;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.card-container:hover {
+  -webkit-box-shadow: 0 1px 2px #666666;
+  -moz-box-shadow: 0 1px 2px #666666;
+  box-shadow: 0 1px 2px #666666;
+}
+.card-image {
+  height: 200px;
+  margin-top: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.card-image img {
+  bottom: -100%;
+  display: inline-block;
+  left: -100%;
+  margin: auto;
+  max-height: 100%;
+  position: absolute;
+  right: -100%;
+  top: -100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.card-container:hover .card-image img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.card-desc {
+  height: 150px;
+}
+.card-caption {
+  color: #aaa;
+  display: block;
+  display: -webkit-box;
+  height: 80px;
+  overflow: hidden;
+  margin-top: 15px;
+  text-overflow: ellipsis;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.card-container:hover .card-caption {
+  color: #333;
+}
+.card-author {
+  color: #aaa;
+  margin-top: 40px;
+  text-align: right;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.card-container:hover .card-author {
+  color: #333;
+}
+@media (max-width: 1200px) {
+  .card {
+    width: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    width: 33.333333%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
