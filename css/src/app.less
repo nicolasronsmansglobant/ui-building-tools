@@ -1,0 +1,111 @@
+@import '../../node_modules/lesshat/build/lesshat.less';
+
+body {
+  background: #eee;
+}
+
+.intro {
+  display: none;
+}
+
+.gallery {
+  margin-left: 0;
+  padding: 0 0 15px;
+}
+
+.card {
+  float: left;
+  padding: 15px 15px 0 0;
+  position: relative;
+  width: 20%;
+}
+
+.card-container {
+  background: #fff;
+  .border-radius(3px);
+  .box-shadow(0 1px 2px #aaa);
+  padding: 10px;
+  .transition(.25s ease-in-out);
+
+  &:hover {
+    .box-shadow(0 1px 2px #666);
+  }
+}
+
+.card-image {
+  height: 200px;
+  margin-top: 15px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    bottom: -100%;
+    display: inline-block;
+    left: -100%;
+    margin: auto;
+    max-height: 100%;
+    position: absolute;
+    right: -100%;
+    top: -100%;
+    .transform(scale(1));
+    .transform-origin(50% 50%);
+    .transition(.25s ease-in-out);
+
+    .card-container:hover & {
+      .transform(scale(1.1));
+    }
+  }
+}
+
+.card-desc {
+  height: 150px;
+}
+
+.card-caption {
+  color: #aaa;
+  display: block;
+  display: -webkit-box;
+  height: (20 * 4px);
+  overflow: hidden;
+  margin-top: 15px;
+  text-overflow: ellipsis;
+  .transition(.25s ease-in-out);
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  .card-container:hover & {
+    color: #333;
+  }
+}
+
+.card-author {
+  color: #aaa;
+  margin-top: 40px;
+  text-align: right;
+  .transition(.25s ease-in-out);
+
+  .card-container:hover & {
+    color: #333;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    width: 33.333333%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
