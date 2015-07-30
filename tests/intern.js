@@ -13,7 +13,7 @@ define({
     ],
     paths: {
       'template': 'js/src/template',
-      'cards': 'js/src/cards',
+      'gallery': 'js/src/gallery',
       'card': 'js/src/card',
       'image': 'js/src/image',
       'caption': 'js/src/caption',

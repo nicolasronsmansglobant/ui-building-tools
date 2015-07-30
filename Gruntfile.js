@@ -58,6 +58,14 @@ module.exports = function (grunt) {
       }
     },
 
+    cssmin: {
+      all: {
+        files: {
+          'css/app.min.css': ['css/app.css']
+        }
+      }
+    },
+
     watch: {
       js: {
         files: ['Gruntfile.js', 'js/src/**/*.{js,mustache}'],
@@ -105,17 +113,19 @@ module.exports = function (grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-bump');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-hogan');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('intern');
 
   grunt.registerTask('js', ['jshint', 'hogan', 'requirejs']);
-  grunt.registerTask('css', ['less', 'csslint']);
+  grunt.registerTask('css', ['less', 'csslint', 'cssmin']);
   grunt.registerTask('build', ['js', 'css']);
   grunt.registerTask('start', ['build', 'test', 'connect', 'watch']);
   grunt.registerTask('test', ['intern']);

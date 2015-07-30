@@ -10,7 +10,7 @@ define(['template', 'card'], function (template, card) {
       cards.push(card.generate());
     }
 
-    return template.cards({
+    return template.gallery({
       cards: cards
     });
   };

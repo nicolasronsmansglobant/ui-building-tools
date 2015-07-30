@@ -1,37 +1,37 @@
 define([
   'intern!object',
   'intern/chai!assert',
-  'cards',
+  'gallery',
   'card',
   'image',
   'caption',
   'author',
   'utils'
-], function (registerSuite, assert, Cards, Card, Image, Caption, Author, Utils) {
+], function (registerSuite, assert, Gallery, Card, Image, Caption, Author, Utils) {
   registerSuite({
     'name': 'App',
-    'Cards': {
+    'Gallery': {
       'constructor': {
         name: 'constructor',
         'returns an object': function () {
-          assert.typeOf(Cards, 'object');
+          assert.typeOf(Gallery, 'object');
         }
       },
-      'Cards.generate()': {
-        name: 'Cards.generate()',
+      'Gallery.generate()': {
+        name: 'Gallery.generate()',
         'is defined': function () {
-          assert.isDefined(Cards.generate);
+          assert.isDefined(Gallery.generate);
         },
         'returns a string if passed a number > 0 as argument': function () {
-          assert.notEqual(Cards.generate(10), '');
+          assert.notEqual(Gallery.generate(10), '');
         },
         'returns an empty string if another type or nothing is passed as param': function () {
-          assert.equal(Cards.generate(undefined), '');
-          assert.equal(Cards.generate('10'), '');
-          assert.equal(Cards.generate({}), '');
-          assert.equal(Cards.generate([]), '');
-          assert.equal(Cards.generate(function () {}), '');
-          assert.equal(Cards.generate(), '');
+          assert.equal(Gallery.generate(undefined), '');
+          assert.equal(Gallery.generate('10'), '');
+          assert.equal(Gallery.generate({}), '');
+          assert.equal(Gallery.generate([]), '');
+          assert.equal(Gallery.generate(function () {}), '');
+          assert.equal(Gallery.generate(), '');
         }
       }
     },

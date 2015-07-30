@@ -12,7 +12,7 @@ body {
   float: left;
   padding: 15px 15px 0 0;
   position: relative;
-  width: 20%;
+  width: 100%;
 }
 .card-container {
   background: #fff;
@@ -106,23 +106,23 @@ body {
 .card-container:hover .card-author {
   color: #333;
 }
-@media (max-width: 1200px) {
-  .card {
-    width: 25%;
-  }
-}
-@media (max-width: 1024px) {
-  .card {
-    width: 33.333333%;
-  }
-}
-@media (max-width: 768px) {
+@media (min-width: 481px) {
   .card {
     width: 50%;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 769px) {
   .card {
-    width: 100%;
+    width: 33.333333%;
+  }
+}
+@media (min-width: 1025px) {
+  .card {
+    width: 25%;
+  }
+}
+@media (min-width: 1201px) {
+  .card {
+    width: 20%;
   }
 }

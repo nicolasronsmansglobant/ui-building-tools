@@ -6,6 +6,6 @@ require.config({
   }
 });
 
-requirejs(['jquery', 'cards'], function ($, cards) {
-  $('#gallery').append(cards.generate(10));
+requirejs(['jquery', 'gallery'], function ($, gallery) {
+  $('#gallery').append(gallery.generate(10));
 });
