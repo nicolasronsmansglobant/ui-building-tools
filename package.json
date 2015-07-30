@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "ui-building-tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "bootstrap": "latest",
     "hogan.js": "latest",
@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "grunt": "latest",
+    "grunt-contrib-bump": "^0.1.0",
     "grunt-contrib-connect": "latest",
     "grunt-contrib-csslint": "latest",
     "grunt-contrib-jshint": "latest",
@@ -17,7 +18,7 @@
     "grunt-contrib-requirejs": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-hogan": "latest",
-    "lesshat": "latest",
-    "intern": "latest"
+    "intern": "latest",
+    "lesshat": "latest"
   }
 }
