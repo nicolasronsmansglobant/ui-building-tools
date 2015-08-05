@@ -348,7 +348,7 @@ define(['utils'], function (utils) {
 ```
 npm install --save-dev lesshat csslint grunt-contrib-cssmin
 ```
-### app.less
+### css/src/app.less
 ```css
 @import '../../node_modules/lesshat/build/lesshat.less';
 
