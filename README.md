@@ -21,6 +21,34 @@ grunt connect
 >> http://localhost:6789
 ```
 
+## package.json
+```js
+{
+  "private": true,
+  "name": "ui-building-tools",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "hogan.js": "latest",
+    "jquery": "^1.11.1",
+    "requirejs": "latest"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-bump": "git+https://github.com/gruntjs/grunt-contrib-bump.git",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-requirejs": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-hogan": "latest",
+    "intern": "latest",
+    "lesshat": "latest"
+  }
+```
+
 ## index.html
 ```html
 <!DOCTYPE html>
@@ -194,7 +222,7 @@ module.exports = function (grunt) {
 ### js/src/main.js
 ```js
 require.config({
-  baeUrl: 'js/src',
+  baseUrl: 'js/src',
   paths: {
     jquery: '../../node_modules/jquery/dist/jquery.min',
     hogan: '../../node_modules/hogan.js/dist/hogan-3.0.2.min.amd'
