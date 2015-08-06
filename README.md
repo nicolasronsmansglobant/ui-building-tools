@@ -3,6 +3,7 @@
 ## Setup
 ```
 npm install -g yo grunt-cli git+https://github.com/NicolasRonsmans/ui-building-tools.git
+yo ui-building-tools
 ```
 
 
