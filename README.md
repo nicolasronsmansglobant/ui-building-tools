@@ -2,7 +2,7 @@
 
 ## Setup
 ```
-npm install -g yo grunt-cli intern
+npm install -g yo grunt-cli git+https://github.com/NicolasRonsmans/ui-building-tools.git
 ```
 
 
